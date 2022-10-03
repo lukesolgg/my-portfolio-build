@@ -24,7 +24,7 @@ function Projects({ projects }: Props) {
       scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#2BAAE2]/80">
         {projects?.map((project, i) => (
           <div
-            key={project?.title}
+            key={project?._id}
             className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 
                 items-center justify-center p-20 md:p-44 h-screen"
           >
