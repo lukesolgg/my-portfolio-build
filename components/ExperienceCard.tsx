@@ -19,13 +19,13 @@ export default function ExperienceCard({ experience }: Props) {
         transition={{ duration: 1.2 }}
         whileInView={{ opacity: 1, y: 0}}
         viewport={{ once: true }}
-        className='w-32 h-32 rounded-full xl:w-[200px] xl:h-[200px] object-cover 
+        className='w-24 h-24 sm:w-32 sm:h-32 rounded-full xl:w-[200px] xl:h-[200px] object-cover 
         object-center'
         src={urlFor(experience?.companyImage).url()} alt="" />
 
         <div className='px-0 md:px-10'>
-          <h4 className='text-4xl font-light'>{experience?.jobTitle} at {experience?.company}</h4>
-          <p className='font-bold text-2xl mt-1'>{experience?.company}</p>
+          <h4 className='text-xl md:text-3xl font-light'>{experience?.jobTitle} at {experience?.company}</h4>
+          <p className='font-bold text-2xl md::text-4xl mt-1'>{experience?.company}</p>
           <div className='flex space-x-2 my-2'>
             {experience.technologies.map((technology) => (
               <img 
@@ -43,7 +43,7 @@ export default function ExperienceCard({ experience }: Props) {
               : new Date(experience.dateEnded).toDateString()}
             </p>
 
-          <ul className='list-disc space-y-4 ml-5 text-lg max-h-96 overflow-y-scroll 
+          <ul className='list-disc space-y-4 ml-5 text-xs md:text-lg max-h-96 overflow-y-scroll 
           pr-5 scrollbar-thin scrollbar-track-black scrollbar-thumb-[#2BAAE2]/80'>
               {experience.points.map((point, i) => (
                 <li key={i}>{point}</li>
