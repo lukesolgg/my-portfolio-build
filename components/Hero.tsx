@@ -30,7 +30,7 @@ export default function Hero({ pageInfo }: Props) {
         <h2 className='text-xs uppercase text-gray-500 pb-2 tracking-[1rem]'>
           {pageInfo?.role}
           </h2>
-        <h1 className='text-3xl lg:text-4xl font-semibold px-10'>
+        <h1 className='text-3xl font-semibold px-10'>
           <div className='inline-block mr-1'>
             <span className="text-[#2BAAE2]/60">{ '<'}</span>
             <span>{text}</span>
