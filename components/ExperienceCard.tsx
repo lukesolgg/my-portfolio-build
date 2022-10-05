@@ -24,9 +24,9 @@ export default function ExperienceCard({ experience }: Props) {
         src={urlFor(experience?.companyImage).url()} alt="" />
 
         <div className='px-0 md:px-10'>
-          <h4 className='text-xl md:text-3xl font-light'>{experience?.jobTitle} at {experience?.company}</h4>
-          <p className='font-bold text-2xl md::text-4xl mt-1'>{experience?.company}</p>
-          <div className='flex space-x-2 my-2'>
+          <h4 className='ml-5 text-xl md:text-3xl font-light'>{experience?.jobTitle} at {experience?.company}</h4>
+          <p className='ml-5 font-bold text-2xl md::text-4xl mt-1'>{experience?.company}</p>
+          <div className='ml-5 flex space-x-2 my-2'>
             {experience.technologies.map((technology) => (
               <img 
               src={urlFor(technology.image).url()}
@@ -36,7 +36,7 @@ export default function ExperienceCard({ experience }: Props) {
               />
             ))}  
           </div>
-          <p className='uppercase py-5 text-gray-300'>
+          <p className='ml-5 uppercase py-5 text-gray-300'>
             {new Date(experience.dateStarted).toDateString()} -{" "}
             {experience.isCurrentlyWorkingHere
               ? "Present"
