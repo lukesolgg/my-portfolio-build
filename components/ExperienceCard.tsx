@@ -23,7 +23,7 @@ export default function ExperienceCard({ experience }: Props) {
         object-center'
         src={urlFor(experience?.companyImage).url()} alt="" />
 
-        <div className='px-0 md:px-10'>
+        <div className='px-10 md:px-10'>
           <h4 className='ml-5 text-xl md:text-3xl font-light'>{experience?.jobTitle} at {experience?.company}</h4>
           <p className='ml-5 font-bold text-2xl md::text-4xl mt-1'>{experience?.company}</p>
           <div className='ml-5 flex space-x-2 my-2'>
