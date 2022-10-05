@@ -22,12 +22,12 @@ function ContactMe({}: Props) {
       className="h-screen flex relative flex-col text-center md:text-left md:flex-row max-w-7xl px-5 
     justify-evenly mx-auto items-center"
     >
-      <h3 className="absolute top-32  uppercase tracking-[1rem] text-gray-500 text-2xl md:top-20">
+      <h3 className="absolute top-12  uppercase tracking-[1rem] text-gray-500 text-2xl md:top-20">
         Contact
       </h3>
 
       <div className="flex flex-col space-y-10">
-        <h4 className="text-4xl font-semibold text-center">
+        <h4 className="text-2xl md:text-4xl font-semibold text-center">
           Reach out for Business Propositions.{ ' ' }
           <span className="underline decoration-[#2BAAE2]/50">Lets Talk</span>
         </h4>
@@ -35,21 +35,21 @@ function ContactMe({}: Props) {
         <div>
           <div className="flex items-center space-x-5 justify-center">
             <PhoneIcon className="text-[#2BAAE2] h-7 w-7 animate-pulse" />
-            <p className="text-2xl">+44769333333</p>
+            <p className="text-xl">+44769333333</p>
           </div>
           <div className="flex items-center space-x-5 justify-center">
             <EnvelopeIcon className="text-[#2BAAE2] h-7 w-7 animate-pulse" />
-            <p className="text-2xl">lukeknightofficial@gmail.com</p>
+            <p className="text-xl">lukeknightofficial@gmail.com</p>
           </div>
           <div className="flex items-center space-x-5 justify-center">
             <MapPinIcon className="text-[#2BAAE2] h-7 w-7 animate-pulse" />
-            <p className="text-2xl">123 Developer Lane</p>
+            <p className="text-xl">123 Developer Lane</p>
           </div>
         </div>
 
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="flex flex-col space-y-2 w-fit mx-auto"
+          className="flex flex-col space-y-2 w-fit mx-auto p-2"
         >
           <div className="flex space-x-2">
             <input
