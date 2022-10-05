@@ -90,7 +90,7 @@ export const getServerSideProps = async () => {
     fetchProjects(),
     fetchPageInfo(),
     fetchSkills(),
-    fetchSocials()
+    fetchSocials(),
   ]);
 
   return {

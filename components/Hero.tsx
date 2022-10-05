@@ -1,7 +1,6 @@
 import React from 'react'
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
 import BackgroundCircles from './BackgroundCircles';
-import pfppfp from '../public/pfppfp.jpg'
 import Image from 'next/image'
 import Link from 'next/link';
 import { PageInfo } from '../typings';
@@ -15,9 +14,9 @@ export default function Hero({ pageInfo }: Props) {
     const [text, count] = useTypewriter({
         words: [
           `Hello, I'm ${pageInfo?.name}`,
-          `Developer`, 
-          `Designer`, 
-          `Creator`],
+          `Full Stack Developer`, 
+          `Frontend & Backend`, 
+          `<Passionate about coding />`],
         loop: true,
         delaySpeed: 2000,
     });
@@ -49,7 +48,7 @@ export default function Hero({ pageInfo }: Props) {
             <Link href="#skills">
             <button className='heroButton'>Skills</button>
             </Link>
-            <Link href="#experience">
+            <Link href="#projects">
             <button className='heroButton'>Projects</button>
             </Link>
         </div>

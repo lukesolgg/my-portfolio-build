@@ -24,8 +24,8 @@ export default function ExperienceCard({ experience }: Props) {
         src={urlFor(experience?.companyImage).url()} alt="" />
 
         <div className='px-0 md:px-10'>
-          <h4 className='text-4xl font-light'>CTO OF GAIAN GUARDIANS</h4>
-          <p className='font-bold text-2xl mt-1'>GAIAN GUARDIANS</p>
+          <h4 className='text-4xl font-light'>{experience?.jobTitle} OF {experience?.company}</h4>
+          <p className='font-bold text-2xl mt-1'>{experience?.company}</p>
           <div className='flex space-x-2 my-2'>
             {experience.technologies.map((technology) => (
               <img 
