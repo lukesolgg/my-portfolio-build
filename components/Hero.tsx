@@ -27,7 +27,7 @@ export default function Hero({ pageInfo }: Props) {
         className="relative rounded-full h-80 w-80 mx-auto object-cover"
         alt="lukesolbtc img"/>
         <div className='z-20'>
-        <h2 className='text-sm uppercase text-gray-500 pb-2 tracking-[15px]'>
+        <h2 className='text-xs uppercase text-gray-500 pb-2 tracking-[1rem]'>
           {pageInfo?.role}
           </h2>
         <h1 className='text-5xl lg:text-6xl font-semibold px-10'>
@@ -39,7 +39,7 @@ export default function Hero({ pageInfo }: Props) {
         <Cursor cursorColor='#2BAAE2'/>
         </h1>
 
-        <div className='pt-5'>
+        <div className='flex pt-5'>
             <Link href="#about">
             <button className='heroButton'>About</button>
             </Link>
