@@ -26,7 +26,7 @@ function ContactMe({}: Props) {
         Contact
       </h3>
 
-      <div className="flex flex-col space-y-10">
+      <div className="flex flex-col space-y-10 px-7 sm:px-2">
         <h4 className="text-2xl md:text-4xl font-semibold text-center">
           Reach out for Business Propositions.{ ' ' }
           <span className="underline decoration-[#2BAAE2]/50">Lets Talk</span>

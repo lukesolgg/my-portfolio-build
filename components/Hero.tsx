@@ -27,7 +27,7 @@ export default function Hero({ pageInfo }: Props) {
         className="relative rounded-full h-80 w-80 mx-auto object-cover"
         alt="lukesolbtc img"/>
         <div className='z-20'>
-        <h2 className='text-xs uppercase text-gray-500 pb-2 tracking-[1rem]'>
+        <h2 className='text-xs uppercase text-gray-500 ml-2 pb-2 tracking-[1rem]'>
           {pageInfo?.role}
           </h2>
         <h1 className='text-3xl font-semibold px-10'>
