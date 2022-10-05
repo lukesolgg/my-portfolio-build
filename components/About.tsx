@@ -39,8 +39,8 @@ function About({ pageInfo }: Props) {
         />
 
         <div className='space-y-10 px-0 md:px-10'>
-            <h4 className='text-4xl font-semibold'>Here is a <span className='underline decoration-[#2BAAE2]/50'>little</span>  background</h4>
-            <p className='text-base'>{pageInfo?.backgroundInformation}</p>
+            <h4 className='text-2xl font-semibold'>Here is a <span className='underline decoration-[#2BAAE2]/50'>little</span>  background</h4>
+            <p className='text-sm'>{pageInfo?.backgroundInformation}</p>
         </div>
     </motion.div>
   )

@@ -15,7 +15,7 @@ export default function Hero({ pageInfo }: Props) {
           `Hello, I'm ${pageInfo?.name}`,
           `Full Stack Developer`, 
           `Coffee Addict`, 
-          `Passionate About Coding`],
+          `Passionate Coder`],
         loop: true,
         delaySpeed: 2000,
     });
