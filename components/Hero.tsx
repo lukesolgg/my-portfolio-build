@@ -1,7 +1,6 @@
 import React from 'react'
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
 import BackgroundCircles from './BackgroundCircles';
-import Image from 'next/image'
 import Link from 'next/link';
 import { PageInfo } from '../typings';
 import { urlFor } from '../sanity';
@@ -15,26 +14,28 @@ export default function Hero({ pageInfo }: Props) {
         words: [
           `Hello, I'm ${pageInfo?.name}`,
           `Full Stack Developer`, 
-          `Frontend & Backend`, 
-          `<Passionate about coding />`],
+          `Coffee Addict`, 
+          `Passionate About Coding`],
         loop: true,
         delaySpeed: 2000,
     });
   return (
     <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
         <BackgroundCircles />
-        <Image 
-        height={128}
-        width={128}
+        <img
         src={urlFor(pageInfo?.heroImage).url()}
-        className="relative rounded-full h-32 w-32 mx-auto object-cover"
-        alt="/"/>
+        className="relative rounded-full h-80 w-80 mx-auto object-cover"
+        alt="lukesolbtc img"/>
         <div className='z-20'>
         <h2 className='text-sm uppercase text-gray-500 pb-2 tracking-[15px]'>
           {pageInfo?.role}
           </h2>
         <h1 className='text-5xl lg:text-6xl font-semibold px-10'>
-        <span className='mr-3'>{text}</span>
+          <div className='inline-block mr-1'>
+            <span className="text-[#2BAAE2]/60">{ '<'}</span>
+            <span>{text}</span>
+            <span className="text-[#2BAAE2]/60">{ '/>'}</span>
+          </div>
         <Cursor cursorColor='#2BAAE2'/>
         </h1>
 

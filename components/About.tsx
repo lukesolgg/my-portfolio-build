@@ -1,11 +1,11 @@
-import React from 'react'
-import { motion } from 'framer-motion'
+import React from 'react';
+import { motion } from 'framer-motion';
 import { urlFor } from '../sanity';
 import { PageInfo } from '../typings';
 
 type Props = {
     pageInfo: PageInfo
-};
+}
 
 function About({ pageInfo }: Props) {
   return (
@@ -13,9 +13,9 @@ function About({ pageInfo }: Props) {
     initial={{ opacity: 0 }}
     whileInView={{ opacity: 1 }}
     transition={{ duration: 1.5 }}
-    className='flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-7xl px-10 
+    className='flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-7xl px-5 
     justify-evenly mx-auto items-center'>
-        <h3 className='absolute top-24  uppercase tracking-[20px] text-gray-500 text-2xl'>
+        <h3 className='absolute top-32  uppercase tracking-[1rem] text-gray-500 text-2xl md:top-20'>
             About
         </h3>
 
@@ -31,10 +31,11 @@ function About({ pageInfo }: Props) {
             x: 0,
             opacity: 1,
         }}
-        className="mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover
-        md:rounded-lg md:w-64 md:h-96 xl:w-[500px] xl:h-[600px]"
+        className="mb-2 xl:mb-20 flex-shrink-0 w-40 h-40 rounded-full object-cover
+        md:rounded-lg md:w-64 md:h-80 xl:w-[500px] xl:h-[50vh]"
         viewport={{ once: true }}
         src={urlFor(pageInfo?.profilePic).url()}
+        alt="secondary lukesolbtc img"
         />
 
         <div className='space-y-10 px-0 md:px-10'>

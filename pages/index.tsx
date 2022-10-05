@@ -37,7 +37,7 @@ const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
         <Hero pageInfo={pageInfo}/>
       </section>
 
-      <section id='about' className='snap-center' >
+      <section id='about' className='snap-center'>
         <About pageInfo={pageInfo} />
       </section>
 
@@ -63,26 +63,6 @@ const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
 }
 
 export default Home
-
-{/*export const getStaticProps: GetStaticProps<Props> = async () => {
-  const pageInfo: PageInfo = await fetchPageInfo();
-  const experiences: Experience[] = await fetchExperiences();
-  const skills: Skill[] = await fetchSkills();
-  const projects: Project[] = await fetchProjects();
-  const socials: Social[] = await fetchSocials();
-
-  return {
-    props: {
-      pageInfo,
-      experiences,
-      skills,
-      projects,
-      socials,
-    },
-
-    revalidate: 10,
-  };
-};*/}
 
 export const getServerSideProps = async () => {
   const [ experiences, projects, pageInfo, skills, socials ] = await Promise.all([
