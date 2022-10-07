@@ -35,15 +35,15 @@ function ContactMe({}: Props) {
         <div>
           <div className="flex items-center space-x-5 justify-center">
             <PhoneIcon className="text-[#2BAAE2] h-7 w-7 animate-pulse" />
-            <p className="text-xs md:text-xl">+44769333333</p>
+            <p className="md:text-xl">+44769333333</p>
           </div>
           <div className="flex items-center space-x-5 justify-center">
             <EnvelopeIcon className="text-[#2BAAE2] h-7 w-7 animate-pulse" />
-            <p className="text-xs md:text-xl">lukeknightofficial@gmail.com</p>
+            <p className="text-xl">lukeknightofficial@gmail.com</p>
           </div>
           <div className="flex items-center space-x-5 justify-center">
             <MapPinIcon className="text-[#2BAAE2] h-7 w-7 animate-pulse" />
-            <p className="text-xs md:text-xl">123 Developer Lane</p>
+            <p className="text-xl">123 Developer Lane</p>
           </div>
         </div>
 
