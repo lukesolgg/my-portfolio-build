@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { Project } from '../typings';
 import { urlFor } from '../sanity';
+import BackgroundSplit from './BackgroundSplit';
 
 type Props = {
   projects: Project[];
@@ -16,7 +17,7 @@ function Projects({ projects }: Props) {
       className="h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly
     mx-auto items-center z-0"
     >
-      <h3 className="absolute top-12  uppercase tracking-[1rem] text-gray-500 text-2xl md:top-20">
+      <h3 className="absolute top-32 md:top-20  uppercase tracking-[1rem] text-gray-500 text-2xl">
         Projects
       </h3>
 
@@ -67,7 +68,7 @@ function Projects({ projects }: Props) {
         ))}
       </div>
 
-      <div className="w-full absolute top-[30%] bg-[#2BAAE2]/10 left-0 h-[500px] -skew-y-12" />
+      <BackgroundSplit />
     </motion.div>
   );
 }
