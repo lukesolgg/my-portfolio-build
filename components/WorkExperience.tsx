@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import ExperienceCard from './ExperienceCard'
 import { Experience } from '../typings'
+import BackgroundSplit from './BackgroundSplit'
 
 type Props = {
   experiences: Experience[];
@@ -27,6 +28,8 @@ function WorkExperience({ experiences }: Props) {
               <ExperienceCard key={experience._id} experience={experience}/>
             ))}
         </div>
+
+        <BackgroundSplit />
     </motion.div>
   )
 }
