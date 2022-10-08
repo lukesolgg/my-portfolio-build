@@ -13,8 +13,9 @@ function WorkExperience({ experiences }: Props) {
     initial={{ opacity: 0 }}
     whileInView={{ opacity: 1 }}
     transition={{ duration: 1.5 }} 
-    className='h-screen flex relative overflow-hidden flex-col text-left md:flex-row
-    max-w-full px-10 justify-evenly mx-auto items-center'>
+    className='h-screen flex relative flex-col text-left md:flex-row
+    max-w-full px-10 justify-evenly mx-auto items-center snap-x snap-mandatory overflow-scroll z-0
+    overflow-x-scroll overflow-y-hidden scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#2BAAE2]/80'>
         <h3 className='absolute top-32 md:top-20  uppercase tracking-[1rem] text-gray-500 text-2xl'>
           Experience
         </h3>
