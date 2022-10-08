@@ -15,7 +15,7 @@ function About({ pageInfo }: Props) {
     transition={{ duration: 1.5 }}
     className='flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-7xl px-5 
     justify-center mx-auto items-center'>
-        <h3 className='absolute top-32 md:top-20  uppercase tracking-[1rem] text-gray-500 text-2xl'>
+        <h3 className='headingTitle'>
             About
         </h3>
 

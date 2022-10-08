@@ -22,7 +22,7 @@ function ContactMe({}: Props) {
       className="h-screen flex relative flex-col text-center md:text-left max-w-7xl px-10 pt-0 
       place-content-center gap-y-10 mx-auto items-center"
     >
-      <h3 className="absolute top-32 md:top-20  uppercase tracking-[1rem] text-gray-500 text-2xl">
+      <h3 className="headingTitle">
         Contact
       </h3>
 

@@ -17,11 +17,11 @@ function Projects({ projects }: Props) {
       className="h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly
     mx-auto items-center z-0"
     >
-      <h3 className="absolute top-32 md:top-20  uppercase tracking-[1rem] text-gray-500 text-2xl">
+      <h3 className="headingTitle">
         Projects
       </h3>
 
-      <h3 className="absolute top-40 md:top-28  uppercase tracking-[3px] text-gray-500 text-sm">
+      <h3 className="subHeadingTitle">
         Swipe Right For More
       </h3>
 

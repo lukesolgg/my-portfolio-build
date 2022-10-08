@@ -17,11 +17,11 @@ function WorkExperience({ experiences }: Props) {
     className='h-screen flex relative flex-col text-left md:flex-row
     max-w-full px-10 justify-evenly mx-auto items-center snap-x snap-mandatory overflow-scroll z-0
     overflow-x-scroll overflow-y-hidden scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#2BAAE2]/80'>
-        <h3 className='absolute top-32 md:top-20  uppercase tracking-[1rem] text-gray-500 text-2xl'>
+        <h3 className='headingTitle'>
           Experience
         </h3>
 
-        <h3 className="absolute top-40 md:top-28  uppercase tracking-[3px] text-gray-500 text-sm">
+        <h3 className="subHeadingTitle">
         Swipe Right For More
         </h3>
     
