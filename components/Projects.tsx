@@ -39,7 +39,8 @@ function Projects({ projects }: Props) {
               viewport={{ once: true }}
               src={urlFor(project?.image).url()}
               alt="/"
-              className='max-w-[20vh] max-h-[20vh] md:max-w-[50vh] md:max-h-[30vh]'
+              className='w-24 h-24 sm:w-32 sm:h-32 rounded-full xl:w-[200px] xl:h-[200px] object-cover 
+              object-center'
             />
 
             <div className="space-y-10 px-0 md:px-10 max-w-6xl">
