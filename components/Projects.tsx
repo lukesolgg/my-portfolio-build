@@ -39,7 +39,7 @@ function Projects({ projects }: Props) {
               viewport={{ once: true }}
               src={urlFor(project?.image).url()}
               alt="/"
-              className='w-24 h-24 sm:w-32 sm:h-32 rounded-full xl:w-[200px] xl:h-[200px] object-cover 
+              className='w-24 h-24 sm:w-32 sm:h-32 xl:w-[200px] xl:h-[200px] object-cover 
               object-center'
             />
 
