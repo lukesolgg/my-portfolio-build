@@ -27,7 +27,7 @@ function Skill({ skill, directionLeft }: Props) {
 
             <div className='flex items-center justify-center h-full'>
 
-                <p className='text-sm md:text-base font-bold text-black opacity-100'>{skill.progress}%</p>
+                <p className='text-sm md:text-base font-bold text-black opacity-100'>{skill.title}</p>
             </div>
         </div>
     </div>
